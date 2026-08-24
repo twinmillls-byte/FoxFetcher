@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fox Fetcher — raposas aleatórias sob demanda</title>
-<meta name="description" content="Fox Fetcher busca uma foto aleatória de raposa na internet a cada clique.">
+<title>Fox Fetcher — Random Foxes on Demand</title>
+<meta name="description" content="Fox Fetcher displays a random fox photo from the internet with every click.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%8A%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,31 +21,36 @@
   </svg>
 
   <header class="topbar">
-    <span class="wordmark"><span class="wordmark-paw" aria-hidden="true">&#128062;</span>Fox Fetcher</span>
+    
   </header>
 
   <main class="stage">
 
     <h1 class="title">Fox Fetcher</h1>
-    <p class="tagline">uma raposa aleatória, toda vez que você mandar buscar</p>
+    <p class="tagline">a random fox, every time you fetch one</p>
 
     <figure class="card">
       <div class="card-inner" id="cardInner">
-        <img id="foxImage" class="fox-photo" src="" alt="Foto aleatória de uma raposa" hidden>
+        <img
+  id="foxImage"
+  class="fox-photo"
+  src=""
+  alt="Random fox photo"
+>
         <div class="card-state" id="cardState">
           <span class="card-state-icon" aria-hidden="true">&#128062;</span>
-          <p id="cardStateText">pronta pra ir buscar a primeira raposa</p>
+          <p id="cardStateText">Ready to fetch your first fox</p>
         </div>
       </div>
       <figcaption class="tag-row">
-        <span class="tag" id="foxCount"><span class="tag-paw" aria-hidden="true">&#128062;</span>Nº 000</span>
-        <a href="#" id="foxLink" class="tag-link" target="_blank" rel="noopener noreferrer" hidden>ver imagem original ↗</a>
+        <span class="tag" id="foxCount"><span class="tag-paw" aria-hidden="true">&#128062;</span>No. 000</span>
+        <a href="#" id="foxLink" class="tag-link" target="_blank" rel="noopener noreferrer" hidden>view original image ↗</a>
       </figcaption>
     </figure>
 
     <button id="fetchButton" class="fetch-btn" type="button">
       <span class="paw" aria-hidden="true">&#128062;</span>
-      <span id="fetchButtonText">Ir buscar uma raposa</span>
+      <span id="fetchButtonText">Fetch a fox</span>
     </button>
 
     <p class="session-counter" id="sessionCounter" aria-live="polite"></p>
@@ -53,7 +58,7 @@
   </main>
 
   <footer class="credit">
-    imagens via <a href="https://randomfox.ca" target="_blank" rel="noopener noreferrer">randomfox.ca</a>
+    Images via <a href="https://randomfox.ca" target="_blank" rel="noopener noreferrer">randomfox.ca</a>
   </footer>
 
 </div>
