@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fox Fetcher — raposas aleatórias sob demanda</title>
+<meta name="description" content="Fox Fetcher busca uma foto aleatória de raposa na internet a cada clique.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%8A%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene">
+
+  <svg class="treeline" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path class="pine pine-back"  d="M-20,150 L-20,75 L14,86 L48,70 L82,92 L116,91 L150,61 L184,89 L218,72 L252,58 L286,92 L320,63 L354,82 L388,93 L422,90 L456,68 L490,69 L524,91 L558,80 L592,90 L626,60 L660,68 L694,92 L728,59 L762,88 L796,81 L830,55 L864,55 L898,58 L932,92 L966,59 L1000,58 L1034,70 L1068,92 L1102,81 L1136,93 L1170,60 L1204,87 L1220,150 Z"/>
+    <path class="pine pine-front" d="M-20,150 L-34,62 L12,54 L58,71 L104,46 L150,73 L196,44 L242,61 L288,45 L334,28 L380,37 L426,69 L472,74 L518,43 L564,44 L610,40 L656,68 L702,57 L748,74 L794,45 L840,35 L886,76 L932,44 L978,77 L1024,41 L1070,67 L1116,49 L1162,37 L1208,46 L1220,150 Z"/>
+  </svg>
+
+  <header class="topbar">
+    <span class="wordmark"><span class="wordmark-paw" aria-hidden="true">&#128062;</span>Fox Fetcher</span>
+  </header>
+
+  <main class="stage">
+
+    <h1 class="title">Fox Fetcher</h1>
+    <p class="tagline">uma raposa aleatória, toda vez que você mandar buscar</p>
+
+    <figure class="card">
+      <div class="card-inner" id="cardInner">
+        <img id="foxImage" class="fox-photo" src="" alt="Foto aleatória de uma raposa" hidden>
+        <div class="card-state" id="cardState">
+          <span class="card-state-icon" aria-hidden="true">&#128062;</span>
+          <p id="cardStateText">pronta pra ir buscar a primeira raposa</p>
+        </div>
+      </div>
+      <figcaption class="tag-row">
+        <span class="tag" id="foxCount"><span class="tag-paw" aria-hidden="true">&#128062;</span>Nº 000</span>
+        <a href="#" id="foxLink" class="tag-link" target="_blank" rel="noopener noreferrer" hidden>ver imagem original ↗</a>
+      </figcaption>
+    </figure>
+
+    <button id="fetchButton" class="fetch-btn" type="button">
+      <span class="paw" aria-hidden="true">&#128062;</span>
+      <span id="fetchButtonText">Ir buscar uma raposa</span>
+    </button>
+
+    <p class="session-counter" id="sessionCounter" aria-live="polite"></p>
+
+  </main>
+
+  <footer class="credit">
+    imagens via <a href="https://randomfox.ca" target="_blank" rel="noopener noreferrer">randomfox.ca</a>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
